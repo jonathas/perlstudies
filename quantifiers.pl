@@ -12,8 +12,8 @@ sub main {
 		#The dot means any character: s.n
 		#The + is a quantifier. Matches 1 or more: o+
 		#The * tells it to match 0 or more of the preceding character: so*n
-		#Starts with s and finishes when it finds an n: s.*n
-		#The question mark after the star changes it from beeing greedy to non greedy: s.*?n
+		#Starts with s and finishes when it finds an n, as many as possible: s.*n
+		#The question mark after the star changes it from beeing greedy to non greedy (as few as possible): s.*?n
 		if($line =~ /(so*n)/) {
 			print "$1\n";
 		}
