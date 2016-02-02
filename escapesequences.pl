@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-$|=1;
+$|=1; #turn off output buffering
 
 sub main {
 	
